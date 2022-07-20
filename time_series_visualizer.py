@@ -55,7 +55,7 @@ def draw_box_plot():
     # Draw box plots (using Seaborn)
 
     df_box['month_num'] = df_box['date'].dt.month
-    df_box = df.box.sort_values['month_num']
+    df_box = df_box.sort_values['month_num']
 
     fig, axes= plt.subplots(nrows=1, ncols=2, figsize=(10,5))
     axes[0] = sns.boxplot(x=df_box['year'], y=df_box['value'], ax= axes[0])
